@@ -188,9 +188,6 @@ export default {
 
 #equal {
   border-radius: 0px 0px 15px 0px;
-  border: 1px solid #e0e0e0;
-  background-color: #4db2ec;
-  color: white;
 }
 
 .operator:hover {
