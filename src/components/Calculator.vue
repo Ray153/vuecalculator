@@ -137,7 +137,6 @@ export default {
 <style scoped>
 
 .calculator {
-  border: solid 2px black;
   margin: 0 auto;
   width: 350px;
   font-size: 30px;
@@ -145,7 +144,6 @@ export default {
   grid-template-columns: repeat(4, auto);
   grid-auto-rows: minmax(0px, auto);
   font-family: Arial;
-  border-radius: 15px 15px 15px 15px;
 }
 
 .display {
@@ -158,11 +156,13 @@ export default {
   height: 100px;
   text-align: right;
   border: 1px solid #e0e0e0;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .zero {
   border: 1px solid #e0e0e0;
   grid-column: 1 / 3;
+  border-radius: 0px 0px 0px 15px;
 }
 
 .btn {
@@ -186,6 +186,10 @@ export default {
   border: 1px solid #e0e0e0;
   background-color: #4db2ec;
   color: white;
+}
+
+#equal {
+  border-radius: 0px 0px 15px 0px;
 }
 
 .operator:hover {
